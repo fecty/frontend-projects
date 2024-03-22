@@ -1,0 +1,64 @@
+:root {
+    --card-width: 300px;
+  /* CSS HSL */
+    --cerulean: hsla(198, 96%, 34%, 1);
+    --cerulean-transculent: hsla(198, 96%, 34%, .4);
+    --bondi-blue: hsla(192, 82%, 38%, 1);
+    --moonstone: hsla(187, 71%, 42%, 1);
+    --moonstone-2: hsla(187, 62%, 48%, 1);
+    --robin-egg-blue: hsla(187, 65%, 54%, 1);
+    --robin-egg-blue-2: hsla(182, 58%, 57%, 1);
+    --tiffany-blue: hsla(176, 57%, 61%, 1);
+    --tiffany-blue-2: hsla(169, 67%, 73%, 1);
+    --aquamarine: hsla(163, 74%, 79%, 1);
+    --aquamarine-2: hsla(154, 88%, 84%, 1);
+}
+
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(45deg, var(--robin-egg-blue), var(--aquamarine));
+}
+
+.card-container{
+    display: flex;
+    gap:1rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+img {
+  max-width: var(--card-width);
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.card {
+    box-sizing: content-box;
+  /* border: 2px solid black; */
+  max-width: var(--card-width);
+  text-align: center;
+  background-color: #63636367;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 10px;
+  /* max-height: max-content; */
+}
+
+.card > h1{
+    font-family: 'Segoe UI';
+    color: white;
+
+}
+
+.card > p{
+    margin: 10px;
+    color: white;
+}
